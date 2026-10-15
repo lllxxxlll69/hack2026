@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#021823"><title>Онлайн деканат · Кабинет студента</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/brand.svg">
+  <link rel="stylesheet" href="/assets/style.css?v=20261015"><link rel="stylesheet" href="/assets/theme.css?v=composer4"><script src="/assets/app.js?v=features2" defer></script><script src="/assets/motion.js?v=features2" defer></script>
+</head>
+<body>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <section id="login" class="login-shell">
+    <div class="login-art"><span class="eyebrow">Университет - Меридиан</span>
+      <div class="login-art-heading"><div class="brand-orb" aria-hidden="true"><svg class="icon"><use href="/assets/icons.svg#cap"/></svg></div><h1>Меньше бумаг -<br>проще документы</h1></div>
+      <ul class="login-benefits"><li>Ваш цифровой помощник.</li><li>Решит все трудности с документами.</li><li>Теперь не нужно стоять в толпе в надежде<br>увидеть декана</li></ul>
+      <div class="login-pills"><span>Онлайн деканат</span><span>Кабинет студента</span></div>
+    </div>
+    <div class="login-panel"><div class="login-panel-heading"><span class="logo-mark"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#cap"/></svg></span><h2>Добро пожаловать!</h2></div>
+      <form id="login-form"><label>Логин<input name="username" autocomplete="username" required></label><label>Пароль<input name="password" type="password" autocomplete="current-password" required></label><div class="login-actions"><button class="primary" type="submit">Войти</button><button id="registration-info" class="secondary" type="button">Регистрация</button></div></form>
+      <details class="recovery"><summary>Восстановить пароль</summary><form id="forgot-form"><label>Логин<input name="username" required></label><button type="submit">Получить код на почту</button></form><form id="reset-form"><label>Код от деканата или из письма<input name="token" required></label><label>Новый пароль<input name="password" type="password" minlength="12" required></label><button type="submit">Сохранить пароль</button></form></details>
+    </div>
+  </section>
+  <div id="app" class="app-shell hidden">
+    <aside class="sidebar"><a class="brand" href="/" aria-label="Онлайн деканат"><span class="logo-mark"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#cap"/></svg></span><span>Онлайн деканат<small>Кабинет студента</small></span></a>
+      <div class="sidebar-account"><span class="avatar" id="avatar">С</span><strong id="account-name"></strong></div>
+      <div class="workspace-label">Моё пространство</div><nav aria-label="Основная навигация">
+        <button data-page="home" class="nav-button active" aria-label="Главная"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#home"/></svg><span>Главная</span></button>
+        <button data-page="documents" class="nav-button" aria-label="Документы"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#documents"/></svg><span>Документы</span></button>
+        <button data-page="history" class="nav-button" aria-label="История обращений"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#clock"/></svg><span>История обращений</span><b id="history-count">0</b></button>
+        <button data-page="knowledge" class="nav-button" aria-label="База правил"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#book"/></svg><span>База правил</span></button>
+      </nav><div class="sidebar-bottom"><div id="service-status" class="service"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#bolt"/></svg><div>Проверяем соединение<small>Обработка на вашем компьютере</small></div></div><button data-page="settings" class="nav-button" aria-label="Настройки"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#settings"/></svg><span>Настройки</span></button><button id="logout" class="nav-button" aria-label="Выйти"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#logout"/></svg><span>Выйти</span></button></div>
+    </aside>
+    <div class="main-shell"><header class="topbar"><div class="breadcrumb">Личный кабинет <span>/</span> <b id="page-title">Главная</b></div><div class="account"><span class="privacy-chip"><svg class="icon" aria-hidden="true"><use href="/assets/icons.svg#bolt"/></svg>Локальная обработка</span></div></header>
+      <main id="content"></main><footer>Онлайн деканат <span>Документы хранятся 14 дней.</span></footer>
+    </div>
+  </div>
+  <dialog id="document-dialog"><div class="dialog-header"><h2>Карточка документа</h2><button id="close-dialog" aria-label="Закрыть">×</button></div><div id="document-detail"></div></dialog>
+  <dialog id="registration-dialog"><div class="dialog-header"><h2>Получить аккаунт</h2><button id="close-registration" aria-label="Закрыть">×</button></div><p>Аккаунты студентов создаёт деканат. Обратитесь к сотруднику: он выдаст вам логин и временный пароль.</p><p class="muted">Подтверждение кодом не требуется. При первом входе нужно сменить временный пароль.</p></dialog>
+</body>
+</html>

@@ -1,0 +1,51 @@
+{
+  "format_valid": true,
+  "documents": 30,
+  "questions": 120,
+  "field_accuracy_macro": 0.985833,
+  "validation_exact_match": 0.933333,
+  "question_exact_match": 0.983333,
+  "errors": [
+    {
+      "document_id": "open-002",
+      "field": "signature_present",
+      "expected": true,
+      "actual": false
+    },
+    {
+      "document_id": "open-002",
+      "validation": "mismatch"
+    },
+    {
+      "question_id": "open-002-Q1",
+      "answer": "structured mismatch"
+    },
+    {
+      "document_id": "open-008",
+      "field": "signature_present",
+      "expected": true,
+      "actual": false
+    },
+    {
+      "document_id": "open-008",
+      "validation": "mismatch"
+    },
+    {
+      "question_id": "open-008-Q1",
+      "answer": "structured mismatch"
+    },
+    {
+      "document_id": "open-011",
+      "field": "leave_start",
+      "expected": "2026-11-01",
+      "actual": "2026-10-01"
+    },
+    {
+      "document_id": "open-029",
+      "field": "student_name",
+      "expected": "Волков Лев Андреевич",
+      "actual": "Вolkov Lev Andreevich"
+    }
+  ],
+  "note": "Текст answer проверяется на демо; автоматически сравниваются value, answerable и sources. Итоговый балл жюри не рассчитывается."
+}

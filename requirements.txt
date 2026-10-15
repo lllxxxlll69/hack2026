@@ -1,0 +1,14 @@
+fastapi>=0.115,<1
+uvicorn[standard]>=0.34,<1
+sqlalchemy>=2.0.36,<3
+psycopg[binary]>=3.2,<4
+pydantic-settings>=2.7,<3
+python-multipart>=0.0.20,<1
+httpx>=0.28,<1
+argon2-cffi>=23.1,<26
+cryptography>=44,<47
+pymupdf>=1.25,<2
+opencv-python-headless>=4.10,<5
+Pillow>=11,<13
+docxtpl>=0.20,<1
+python-dotenv>=1,<2

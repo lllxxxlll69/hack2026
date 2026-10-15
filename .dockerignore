@@ -1,0 +1,14 @@
+# Only files required to build the production API enter the Docker context.
+*
+!Dockerfile
+!requirements.txt
+!backend/
+!backend/**
+!web/
+!web/**
+!data/
+!data/case/
+!data/case/rules.md
+!data/case/results.schema.json
+**/__pycache__/
+**/*.pyc

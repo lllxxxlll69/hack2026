@@ -1,0 +1,87 @@
+{
+  "format_valid": true,
+  "documents": 30,
+  "questions": 120,
+  "field_accuracy_macro": 0.959167,
+  "validation_exact_match": 1.0,
+  "question_exact_match": 0.991667,
+  "errors": [
+    {
+      "document_id": "open-003",
+      "field": "document_number",
+      "expected": "ОБ-1003",
+      "actual": "OB-1003"
+    },
+    {
+      "document_id": "open-004",
+      "field": "university",
+      "expected": "Учебный университет «Меридиан»",
+      "actual": "Учебный университет «Мериадан»"
+    },
+    {
+      "document_id": "open-011",
+      "field": "leave_start",
+      "expected": "2026-11-01",
+      "actual": "2026-09-01"
+    },
+    {
+      "document_id": "open-022",
+      "field": "internship_start",
+      "expected": "2026-06-01",
+      "actual": "2026-01-01"
+    },
+    {
+      "document_id": "open-022",
+      "field": "internship_end",
+      "expected": "2026-07-15",
+      "actual": "2026-10-15"
+    },
+    {
+      "document_id": "open-024",
+      "field": "internship_start",
+      "expected": "2026-06-01",
+      "actual": "2026-01-01"
+    },
+    {
+      "document_id": "open-024",
+      "field": "internship_end",
+      "expected": "2026-07-15",
+      "actual": "2026-05-15"
+    },
+    {
+      "document_id": "open-024",
+      "field": "issue_date",
+      "expected": "2026-07-17",
+      "actual": "2026-05-17"
+    },
+    {
+      "document_id": "open-025",
+      "field": "organization",
+      "expected": "Учебная организация «Орбита»",
+      "actual": "Учебная организация «Обрата»"
+    },
+    {
+      "document_id": "open-030",
+      "field": "internship_start",
+      "expected": "2026-06-01",
+      "actual": "2026-01-01"
+    },
+    {
+      "document_id": "open-030",
+      "field": "internship_end",
+      "expected": "2026-07-15",
+      "actual": "2026-05-15"
+    },
+    {
+      "document_id": "open-030",
+      "field": "issue_date",
+      "expected": "2026-07-16",
+      "actual": "2026-05-16"
+    },
+    {
+      "question_id": "open-030-Q2",
+      "answer": "structured mismatch"
+    }
+  ],
+  "note": "Текст answer проверяется на демо; автоматически сравниваются value, answerable и sources. Итоговый балл жюри не рассчитывается."
+}
